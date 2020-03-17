@@ -1,6 +1,8 @@
 //grabbing the scatter id and the with 
 var width = parseInt(d3.select("#scatter").style("width"));
 
+
+
 // determing the height of the graph 
 var height = width - width / 3.9;
 
