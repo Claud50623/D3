@@ -1,7 +1,5 @@
 //grabbing the scatter id and the with 
 var width = parseInt(d3.select("#scatter").style("width"));
-import * as d3 from 'd3';
-d3tip = require('d3-tip')
 
 // determing the height of the graph 
 var height = width - width / 3.9;
@@ -172,7 +170,7 @@ function visualize(theData) {
 
   // This function allows us to set up tooltip rules (see d3-tip.js).
   var toolTip = d3
-    .d3Tip()
+    .tip()
     .attr("class", "d3-tip")
     .offset([40, -60])
     .html(function(d) {
